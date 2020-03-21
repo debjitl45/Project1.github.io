@@ -25,11 +25,11 @@ while (randomNo === lastrandom) {
 }
 lastrandom = randomNo;
 if(randomNo==1)
-	return computerChoose="rock";
+	return computerChoose="Rock";
 if(randomNo==2)
-	return computerChoose="paper";
+	return computerChoose="Paper";
 if(randomNo==3)
-	return computerChoose="scissors";
+	return computerChoose="Scissors";
 }
 
 
@@ -38,15 +38,15 @@ function results()
 if(computerChoose==userChoose)
 	return result="tie";
 if(computerChoose=="rock" && userChoose=="paper")
-	return result="user wins";
+	return result="User wins";
 if(computerChoose=="rock" && userChoose=="scissors")
-	return result="computer wins";
+	return result="Computer wins";
 if(computerChoose=="paper" && userChoose=="scissors")
-	return result="user wins";
+	return result="User wins";
 if(computerChoose=="scissors" && userChoose=="paper")
-	return result="computer wins";
+	return result="Computer wins";
 if(computerChoose=="scissors" && userChoose=="rock")
-	return result="user wins";
+	return result="User wins";
 if(computerChoose=="paper" && userChoose=="rock")
-	return result="computer wins";
+	return result="Computer wins";
 }
