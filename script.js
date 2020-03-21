@@ -18,18 +18,18 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 
 function generateChoice()
 {
-var numbers = [];
-var randomNo;
-do {
-    randomNo= Math.round(Math.random()*3);
-    if(randomNo==1)
+var randomNo=0;
+var lastrandom=0;
+while (randomNo === lastrandom) {
+    random = Math.floor(Math.random() * 3) + 1;
+}
+lastrandom = randomNo;
+if(randomNo==1)
 	return computerChoose="rock";
-   if(randomNo==2)
+if(randomNo==2)
 	return computerChoose="paper";
-   if(randomNo==3)
+if(randomNo==3)
 	return computerChoose="scissors";
-} while (numbers.includes(randomNo));
-numbers.push(randomNo);     
 }
 
 
