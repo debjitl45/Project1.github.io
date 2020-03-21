@@ -45,6 +45,8 @@ if(computerChoose=="paper" && userChoose=="scissors")
 	return result="user wins";
 if(computerChoose=="scissors" && userChoose=="paper")
 	return result="computer wins";
+if(computerChoose=="scissors" && userChoose=="rock")
+	return result="user wins";
 if(computerChoose=="paper" && userChoose=="rock")
 	return result="computer wins";
 }
