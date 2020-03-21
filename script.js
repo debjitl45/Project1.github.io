@@ -1,9 +1,11 @@
 var userChoose;
+var pts=0;
 var computerChoose;
 var result=results();
 const displayResults=document.getElementById("results");
 const computerChoice=document.getElementById("computer-choice");
 const userChoice=document.getElementById("user-choice");
+const score=document.getElementById("score");
 const possibleChoices=document.querySelectorAll(".choices");
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click',(e) => {
@@ -13,6 +15,8 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 	computerChoice.innerHTML = computerChoose
 	userChoice.innerHTML = userChoose
 	displayResults.innerHTML = result
+	if(result=="User wins")
+		score.innerHTML=pts++;
 }));
 
 
